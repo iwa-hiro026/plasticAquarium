@@ -1,4 +1,5 @@
 import SwiftUI
+import Combine
 
 final class ToastViewModel : ObservableObject {
     @Published var showToast : Bool // トースト通知表示フラグ

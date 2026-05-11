@@ -6,6 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		552EC2B12FB1C5AE008888E0 /* BottleMeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC29E2FB1C5AE008888E0 /* BottleMeasureView.swift */; };
+		552EC2B22FB1C5AE008888E0 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2A82FB1C5AE008888E0 /* ToastView.swift */; };
+		552EC2B32FB1C5AE008888E0 /* MeasurePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2A02FB1C5AE008888E0 /* MeasurePageView.swift */; };
+		552EC2B42FB1C5AE008888E0 /* FishStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2982FB1C5AE008888E0 /* FishStruct.swift */; };
+		552EC2B52FB1C5AE008888E0 /* ToastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2AF2FB1C5AE008888E0 /* ToastViewModel.swift */; };
+		552EC2B62FB1C5AE008888E0 /* DataRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC29B2FB1C5AE008888E0 /* DataRowView.swift */; };
+		552EC2B72FB1C5AE008888E0 /* FishItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2AB2FB1C5AE008888E0 /* FishItemViewModel.swift */; };
+		552EC2B82FB1C5AE008888E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2A62FB1C5AE008888E0 /* HomeView.swift */; };
+		552EC2B92FB1C5AE008888E0 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2A72FB1C5AE008888E0 /* RootView.swift */; };
+		552EC2BA2FB1C5AE008888E0 /* BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2A42FB1C5AE008888E0 /* BoxView.swift */; };
+		552EC2BB2FB1C5AE008888E0 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC29F2FB1C5AE008888E0 /* CameraView.swift */; };
+		552EC2BC2FB1C5AE008888E0 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2992FB1C5AE008888E0 /* PlayerModel.swift */; };
+		552EC2BD2FB1C5AE008888E0 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2AA2FB1C5AE008888E0 /* CameraViewController.swift */; };
+		552EC2BE2FB1C5AE008888E0 /* FishModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2972FB1C5AE008888E0 /* FishModel.swift */; };
+		552EC2BF2FB1C5AE008888E0 /* MeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2A12FB1C5AE008888E0 /* MeasureView.swift */; };
+		552EC2C02FB1C5AE008888E0 /* MeasureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2AD2FB1C5AE008888E0 /* MeasureViewModel.swift */; };
+		552EC2C12FB1C5AE008888E0 /* FishViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2AC2FB1C5AE008888E0 /* FishViewModel.swift */; };
+		552EC2C22FB1C5AE008888E0 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC29C2FB1C5AE008888E0 /* DataView.swift */; };
+		552EC2C32FB1C5AE008888E0 /* PlasticMeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2A22FB1C5AE008888E0 /* PlasticMeasureView.swift */; };
+		552EC2C42FB1C5AE008888E0 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2AE2FB1C5AE008888E0 /* PlayerViewModel.swift */; };
+		552EC2C52FB1C5AE008888E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2A52FB1C5AE008888E0 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		559B4E692F9F47D500895BD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +48,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		552EC2972FB1C5AE008888E0 /* FishModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishModel.swift; sourceTree = "<group>"; };
+		552EC2982FB1C5AE008888E0 /* FishStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishStruct.swift; sourceTree = "<group>"; };
+		552EC2992FB1C5AE008888E0 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		552EC29B2FB1C5AE008888E0 /* DataRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRowView.swift; sourceTree = "<group>"; };
+		552EC29C2FB1C5AE008888E0 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
+		552EC29E2FB1C5AE008888E0 /* BottleMeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleMeasureView.swift; sourceTree = "<group>"; };
+		552EC29F2FB1C5AE008888E0 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		552EC2A02FB1C5AE008888E0 /* MeasurePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurePageView.swift; sourceTree = "<group>"; };
+		552EC2A12FB1C5AE008888E0 /* MeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureView.swift; sourceTree = "<group>"; };
+		552EC2A22FB1C5AE008888E0 /* PlasticMeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlasticMeasureView.swift; sourceTree = "<group>"; };
+		552EC2A42FB1C5AE008888E0 /* BoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxView.swift; sourceTree = "<group>"; };
+		552EC2A52FB1C5AE008888E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		552EC2A62FB1C5AE008888E0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		552EC2A72FB1C5AE008888E0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		552EC2A82FB1C5AE008888E0 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		552EC2AA2FB1C5AE008888E0 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		552EC2AB2FB1C5AE008888E0 /* FishItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishItemViewModel.swift; sourceTree = "<group>"; };
+		552EC2AC2FB1C5AE008888E0 /* FishViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishViewModel.swift; sourceTree = "<group>"; };
+		552EC2AD2FB1C5AE008888E0 /* MeasureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewModel.swift; sourceTree = "<group>"; };
+		552EC2AE2FB1C5AE008888E0 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		552EC2AF2FB1C5AE008888E0 /* ToastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastViewModel.swift; sourceTree = "<group>"; };
 		559B4E5B2F9F47D300895BD0 /* Plastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		559B4E682F9F47D500895BD0 /* PlasticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlasticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		559B4E722F9F47D500895BD0 /* PlasticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlasticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +117,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		552EC29A2FB1C5AE008888E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				552EC2972FB1C5AE008888E0 /* FishModel.swift */,
+				552EC2982FB1C5AE008888E0 /* FishStruct.swift */,
+				552EC2992FB1C5AE008888E0 /* PlayerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		552EC29D2FB1C5AE008888E0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				552EC29B2FB1C5AE008888E0 /* DataRowView.swift */,
+				552EC29C2FB1C5AE008888E0 /* DataView.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		552EC2A32FB1C5AE008888E0 /* Measure */ = {
+			isa = PBXGroup;
+			children = (
+				552EC29E2FB1C5AE008888E0 /* BottleMeasureView.swift */,
+				552EC29F2FB1C5AE008888E0 /* CameraView.swift */,
+				552EC2A02FB1C5AE008888E0 /* MeasurePageView.swift */,
+				552EC2A12FB1C5AE008888E0 /* MeasureView.swift */,
+				552EC2A22FB1C5AE008888E0 /* PlasticMeasureView.swift */,
+			);
+			path = Measure;
+			sourceTree = "<group>";
+		};
+		552EC2A92FB1C5AE008888E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				552EC29D2FB1C5AE008888E0 /* Data */,
+				552EC2A32FB1C5AE008888E0 /* Measure */,
+				552EC2A42FB1C5AE008888E0 /* BoxView.swift */,
+				552EC2A52FB1C5AE008888E0 /* ContentView.swift */,
+				552EC2A62FB1C5AE008888E0 /* HomeView.swift */,
+				552EC2A72FB1C5AE008888E0 /* RootView.swift */,
+				552EC2A82FB1C5AE008888E0 /* ToastView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		552EC2B02FB1C5AE008888E0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				552EC2AA2FB1C5AE008888E0 /* CameraViewController.swift */,
+				552EC2AB2FB1C5AE008888E0 /* FishItemViewModel.swift */,
+				552EC2AC2FB1C5AE008888E0 /* FishViewModel.swift */,
+				552EC2AD2FB1C5AE008888E0 /* MeasureViewModel.swift */,
+				552EC2AE2FB1C5AE008888E0 /* PlayerViewModel.swift */,
+				552EC2AF2FB1C5AE008888E0 /* ToastViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		559B4E522F9F47D300895BD0 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +182,9 @@
 				559B4E6B2F9F47D500895BD0 /* PlasticTests */,
 				559B4E752F9F47D500895BD0 /* PlasticUITests */,
 				559B4E5C2F9F47D300895BD0 /* Products */,
+				552EC29A2FB1C5AE008888E0 /* Model */,
+				552EC2A92FB1C5AE008888E0 /* View */,
+				552EC2B02FB1C5AE008888E0 /* ViewModel */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,6 +342,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				552EC2B12FB1C5AE008888E0 /* BottleMeasureView.swift in Sources */,
+				552EC2B22FB1C5AE008888E0 /* ToastView.swift in Sources */,
+				552EC2B32FB1C5AE008888E0 /* MeasurePageView.swift in Sources */,
+				552EC2B42FB1C5AE008888E0 /* FishStruct.swift in Sources */,
+				552EC2B52FB1C5AE008888E0 /* ToastViewModel.swift in Sources */,
+				552EC2B62FB1C5AE008888E0 /* DataRowView.swift in Sources */,
+				552EC2B72FB1C5AE008888E0 /* FishItemViewModel.swift in Sources */,
+				552EC2B82FB1C5AE008888E0 /* HomeView.swift in Sources */,
+				552EC2B92FB1C5AE008888E0 /* RootView.swift in Sources */,
+				552EC2BA2FB1C5AE008888E0 /* BoxView.swift in Sources */,
+				552EC2BB2FB1C5AE008888E0 /* CameraView.swift in Sources */,
+				552EC2BC2FB1C5AE008888E0 /* PlayerModel.swift in Sources */,
+				552EC2BD2FB1C5AE008888E0 /* CameraViewController.swift in Sources */,
+				552EC2BE2FB1C5AE008888E0 /* FishModel.swift in Sources */,
+				552EC2BF2FB1C5AE008888E0 /* MeasureView.swift in Sources */,
+				552EC2C02FB1C5AE008888E0 /* MeasureViewModel.swift in Sources */,
+				552EC2C12FB1C5AE008888E0 /* FishViewModel.swift in Sources */,
+				552EC2C22FB1C5AE008888E0 /* DataView.swift in Sources */,
+				552EC2C32FB1C5AE008888E0 /* PlasticMeasureView.swift in Sources */,
+				552EC2C42FB1C5AE008888E0 /* PlayerViewModel.swift in Sources */,
+				552EC2C52FB1C5AE008888E0 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +522,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "PlasticTests View Plastic ViewModel Model";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -426,6 +554,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "PlasticTests View Plastic ViewModel Model";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

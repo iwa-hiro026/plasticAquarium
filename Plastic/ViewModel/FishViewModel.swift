@@ -21,8 +21,8 @@ final class FishViewModel: ObservableObject {
 
     // 所持数増加メソッド
     func increaseOwnedCount(for fishID: String) {
-        fish : FishModel = self.fishModel(fishID: fishID)
-        fish.increaseOwnedCount()
+        var fish = self.fishModel(for: fishID)
+        fish?.increaseOwnedCount()
         refreshDisplayProperties()
     }
 

@@ -1,9 +1,11 @@
 import Combine
+import SwiftUI
 import Foundation
 
 // プレイヤー表示用ViewModel。画面に表示する値をまとめて持つ
 final class PlayerViewModel: ObservableObject {
     let playerModel: PlayerModel
+    @EnvironmentObject var toastViewModel: ToastViewModel
 
     @Published var totalMeasurementCountText: String
     @Published var plasticMeasurementCountText: String
@@ -66,8 +68,8 @@ final class PlayerViewModel: ObservableObject {
     }
 
     // ペットボトル計測
-    func measureBottle(amount: Int, toastViewModel: ToastViewModel) {
-        if self.playerModel.measureBottle(amount: amount, toastViewModel: ToastViewModel) {
+    func measureBottle(amount: Int) {
+        if self.playerModel.measureBottle(amount: amount) {
             refreshDisplayProperties()
             toastViewModel.toastPreview(message: "計測しました")
         } else {
@@ -76,8 +78,8 @@ final class PlayerViewModel: ObservableObject {
     }
 
     // プラごみ計測
-    func measurePlastic(amount: Int, toastViewModel: ToastViewModel) {
-        if self.playerModel.measurePlastic(amount: amount, toastViewModel: ToastViewModel) {
+    func measurePlastic(amount: Int) {
+        if self.playerModel.measurePlastic(amount: amount) {
             refreshDisplayProperties()
             toastViewModel.toastPreview(message: "計測しました")
         } else {

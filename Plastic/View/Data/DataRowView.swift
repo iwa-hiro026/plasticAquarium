@@ -1,7 +1,7 @@
 import SwiftUI
 
 // DataViewのリスト用
-private struct DataRowView: View {
+struct DataRowView: View {
     let title: String
     let value: String
 

@@ -31,7 +31,7 @@ struct RootView: View {
         }
 
         let existingFishIDs = Set(fishModels.map(\.fishID))
-        for fish in FishType.fishes where !existingFishIDs.contains(fish.id) {
+        for fish in allFish.fishes where !existingFishIDs.contains(fish.id) {
             modelContext.insert(FishModel(fishID: fish.id))
         }
     }
@@ -46,7 +46,3 @@ struct RootView: View {
     }
 }
 
-#Preview {
-    RootView()
-        .modelContainer(for: [PlayerModel.self, FishModel.self], inMemory: true)
-}

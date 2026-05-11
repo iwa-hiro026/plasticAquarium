@@ -7,7 +7,6 @@ struct BottleMeasureView: View {
         VStack(spacing: 16) {
             Image(systemName: "waterbottle.fill")
                 .font(.system(size: 48))
-                .foregroundStyle(.accent)
 
             Text("Bottle Measure")
                 .font(.title2)

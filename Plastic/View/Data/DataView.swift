@@ -11,7 +11,7 @@ struct DataView: View {
                     value: playerViewModel.totalMeasurementCountText
                 )
                 DataRowView(
-                    title: "繝励Λ縺斐∩險域ｸｬ蝗樊焚",
+                    title: "あ",
                     value: playerViewModel.plasticMeasurementCountText
                 )
                 DataRowView(

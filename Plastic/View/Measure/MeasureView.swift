@@ -40,18 +40,18 @@ struct MeasureView: View {
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
 
-            // カメラシート
+            // カメラシート、未完成のためコメントアウト
             // showingCameraがtrueの時に、sheetが表示される
-            .sheet(isPresented: $measureViewModel.showingCamera, content: {
-                // CameraViewを表示、未完成のためコメントアウト
+            // .sheet(isPresented: $measureViewModel.showingCamera, content: {
+                // CameraViewを表示
                 // CameraView(
                 //     isRecognized: $measureViewModel.isRecognized, label: $measureViewModel.label
                 // )
-            })
+            // })
 
-            if measureViewModel.isRecognized() {
+            if measureViewModel.isRecognized {
                 VStack{
-                    Text("認識成功: \(label)")
+                    Text("認識成功: \(measureViewModel.label)")
                         .font(.largeTitle)
                         .padding()
                         .background(.black.opacity(0.7))

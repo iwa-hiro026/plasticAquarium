@@ -1,9 +1,10 @@
 import SwiftUI
+import Combine
 
 final class MeasureViewModel : ObservableObject {
     @Published var showingCamera = false // カメラ起動フラグ
-    @Published private var isRecognized = false // カメラ認証フラグ
-    @Published private var label = "" // ラベル
+    @Published var isRecognized = false // カメラ認証フラグ
+    @Published var label = "" // ラベル
 
     
     // カメラ起動

@@ -8,25 +8,25 @@ enum Description {
 // タブビューのページ形式で選択
 struct MeasurePageView: View {
     @State private var selectedPage = 0
-    @ObservedObject private var measureViewModel : MeasureViewModel
+    @ObservedObject var measureViewModel : MeasureViewModel
     
     var body: some View {
         TabView(selection: $selectedPage) {
             MeasurePageItemView(
+                measureViewModel : measureViewModel,
                 title: "Bottle_500ml",
                 description: Description.Bottle,
                 systemImage: "1.circle.fill",
                 amount: 500,
-                measureViewModel : measureViewModel
             )
             .tag(0)
 
             MeasurePageItemView(
+                measureViewModel : measureViewModel,
                 title: "Plastic_45L",
                 description: Description.Plastic,
                 systemImage: "2.circle.fill",
                 amount: 45000,
-                measureViewModel : measureViewModel
             )
             .tag(1)
 
@@ -37,10 +37,10 @@ struct MeasurePageView: View {
 }
 
 // ページ
-private struct MeasurePageItemView: View {
+struct MeasurePageItemView: View {
     @EnvironmentObject private var playerViewModel: PlayerViewModel
     @EnvironmentObject private var toastViewModel: ToastViewModel
-    @ObservedObject private var measureViewModel : MeasureViewModel
+    @ObservedObject var measureViewModel : MeasureViewModel
 
     let title: String
     let description: Description
@@ -51,15 +51,14 @@ private struct MeasurePageItemView: View {
         VStack(spacing: 16) {
             Image(systemName: systemImage)
                 .font(.system(size: 56))
-                .foregroundStyle(.accent)
 
             Text(title)
                 .font(.title2)
                 .fontWeight(.semibold)
 
-            Text(String(description))
-                .multilineTextAlignment(.center)
-                .foregroundStyle(.secondary)
+//            Text(String(description))
+//                .multilineTextAlignment(.center)
+//                .foregroundStyle(.secondary)
 
             // ボタン、計測不可能ならトースト通知
             if description == Description.Bottle{
@@ -97,8 +96,4 @@ private struct MeasurePageItemView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding(24)
     }
-}
-
-#Preview {
-    MeasurePageView()
 }

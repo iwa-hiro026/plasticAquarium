@@ -7,7 +7,6 @@ struct PlasticMeasureView: View {
         VStack(spacing: 16) {
             Image(systemName: "leaf.fill")
                 .font(.system(size: 48))
-                .foregroundStyle(.accent)
 
             Text("Plastic Measure")
                 .font(.title2)
