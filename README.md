@@ -12,6 +12,7 @@
 - Xcode（実行テスト）
 - Swift
 - SwiftUI
+- コーディング生成AI（Codex）活用
 
 ## Ver.1
 - 大まかなUIの枠組みを作成
