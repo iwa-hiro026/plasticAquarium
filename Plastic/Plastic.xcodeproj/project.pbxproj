@@ -17,6 +17,8 @@
 		552EC2B82FB1C5AE008888E0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2A62FB1C5AE008888E0 /* HomeView.swift */; };
 		552EC2B92FB1C5AE008888E0 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2A72FB1C5AE008888E0 /* RootView.swift */; };
 		552EC2BA2FB1C5AE008888E0 /* BoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2A42FB1C5AE008888E0 /* BoxView.swift */; };
+		55F100012FB2000000000000 /* ExibitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F100042FB2000000000000 /* ExibitionView.swift */; };
+		55F100022FB2000000000000 /* FishNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F100052FB2000000000000 /* FishNode.swift */; };
 		552EC2BB2FB1C5AE008888E0 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC29F2FB1C5AE008888E0 /* CameraView.swift */; };
 		552EC2BC2FB1C5AE008888E0 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2992FB1C5AE008888E0 /* PlayerModel.swift */; };
 		552EC2BD2FB1C5AE008888E0 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2AA2FB1C5AE008888E0 /* CameraViewController.swift */; };
@@ -28,6 +30,8 @@
 		552EC2C32FB1C5AE008888E0 /* PlasticMeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2A22FB1C5AE008888E0 /* PlasticMeasureView.swift */; };
 		552EC2C42FB1C5AE008888E0 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2AE2FB1C5AE008888E0 /* PlayerViewModel.swift */; };
 		552EC2C52FB1C5AE008888E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552EC2A52FB1C5AE008888E0 /* ContentView.swift */; };
+		55F200012FB3000000000000 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F200032FB3000000000000 /* BannerView.swift */; };
+		55F200022FB3000000000000 /* BannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F200042FB3000000000000 /* BannerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,12 +67,16 @@
 		552EC2A62FB1C5AE008888E0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		552EC2A72FB1C5AE008888E0 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		552EC2A82FB1C5AE008888E0 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		55F100042FB2000000000000 /* ExibitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExibitionView.swift; sourceTree = "<group>"; };
+		55F100052FB2000000000000 /* FishNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishNode.swift; sourceTree = "<group>"; };
 		552EC2AA2FB1C5AE008888E0 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		552EC2AB2FB1C5AE008888E0 /* FishItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishItemViewModel.swift; sourceTree = "<group>"; };
 		552EC2AC2FB1C5AE008888E0 /* FishViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishViewModel.swift; sourceTree = "<group>"; };
 		552EC2AD2FB1C5AE008888E0 /* MeasureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureViewModel.swift; sourceTree = "<group>"; };
 		552EC2AE2FB1C5AE008888E0 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
 		552EC2AF2FB1C5AE008888E0 /* ToastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastViewModel.swift; sourceTree = "<group>"; };
+		55F200032FB3000000000000 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		55F200042FB3000000000000 /* BannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewModel.swift; sourceTree = "<group>"; };
 		559B4E5B2F9F47D300895BD0 /* Plastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		559B4E682F9F47D500895BD0 /* PlasticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlasticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		559B4E722F9F47D500895BD0 /* PlasticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlasticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,15 +156,26 @@
 			path = Measure;
 			sourceTree = "<group>";
 		};
+		55F100032FB2000000000000 /* Box */ = {
+			isa = PBXGroup;
+			children = (
+				552EC2A42FB1C5AE008888E0 /* BoxView.swift */,
+				55F100042FB2000000000000 /* ExibitionView.swift */,
+				55F100052FB2000000000000 /* FishNode.swift */,
+			);
+			path = Box;
+			sourceTree = "<group>";
+		};
 		552EC2A92FB1C5AE008888E0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				55F100032FB2000000000000 /* Box */,
 				552EC29D2FB1C5AE008888E0 /* Data */,
 				552EC2A32FB1C5AE008888E0 /* Measure */,
-				552EC2A42FB1C5AE008888E0 /* BoxView.swift */,
 				552EC2A52FB1C5AE008888E0 /* ContentView.swift */,
 				552EC2A62FB1C5AE008888E0 /* HomeView.swift */,
 				552EC2A72FB1C5AE008888E0 /* RootView.swift */,
+				55F200032FB3000000000000 /* BannerView.swift */,
 				552EC2A82FB1C5AE008888E0 /* ToastView.swift */,
 			);
 			path = View;
@@ -170,6 +189,7 @@
 				552EC2AC2FB1C5AE008888E0 /* FishViewModel.swift */,
 				552EC2AD2FB1C5AE008888E0 /* MeasureViewModel.swift */,
 				552EC2AE2FB1C5AE008888E0 /* PlayerViewModel.swift */,
+				55F200042FB3000000000000 /* BannerViewModel.swift */,
 				552EC2AF2FB1C5AE008888E0 /* ToastViewModel.swift */,
 			);
 			path = ViewModel;
@@ -352,6 +372,8 @@
 				552EC2B82FB1C5AE008888E0 /* HomeView.swift in Sources */,
 				552EC2B92FB1C5AE008888E0 /* RootView.swift in Sources */,
 				552EC2BA2FB1C5AE008888E0 /* BoxView.swift in Sources */,
+				55F100012FB2000000000000 /* ExibitionView.swift in Sources */,
+				55F100022FB2000000000000 /* FishNode.swift in Sources */,
 				552EC2BB2FB1C5AE008888E0 /* CameraView.swift in Sources */,
 				552EC2BC2FB1C5AE008888E0 /* PlayerModel.swift in Sources */,
 				552EC2BD2FB1C5AE008888E0 /* CameraViewController.swift in Sources */,
@@ -362,6 +384,8 @@
 				552EC2C22FB1C5AE008888E0 /* DataView.swift in Sources */,
 				552EC2C32FB1C5AE008888E0 /* PlasticMeasureView.swift in Sources */,
 				552EC2C42FB1C5AE008888E0 /* PlayerViewModel.swift in Sources */,
+				55F200012FB3000000000000 /* BannerView.swift in Sources */,
+				55F200022FB3000000000000 /* BannerViewModel.swift in Sources */,
 				552EC2C52FB1C5AE008888E0 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

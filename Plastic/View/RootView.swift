@@ -1,12 +1,14 @@
 import SwiftUI
 import SwiftData
 
+// 保存対象のモデル処理などを行う
 struct RootView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var playerModels: [PlayerModel]
     @Query private var fishModels: [FishModel]
     @State private var didUpdateLastLoginAt = false
     @StateObject private var toastViewModel = ToastViewModel()
+    @StateObject private var bannerViewModel = BannerViewModel()
 
     var body: some View {
         Group {
@@ -15,6 +17,7 @@ struct RootView: View {
                     .environmentObject(PlayerViewModel(playerModel: playerModel))
                     .environmentObject(FishViewModel(fishModels: fishModels))
                     .environmentObject(toastViewModel)
+                    .environmentObject(bannerViewModel)
             } else {
                 ProgressView()
             }
