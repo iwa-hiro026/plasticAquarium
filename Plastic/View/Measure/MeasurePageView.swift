@@ -23,10 +23,10 @@ struct MeasurePageView: View {
 
             MeasurePageItemView(
                 measureViewModel : measureViewModel,
-                title: "Plastic_45L",
+                title: "Plastic",
                 description: Description.Plastic,
                 systemImage: "2.circle.fill",
-                amount: 45000,
+                amount: 20000,
             )
             .tag(1)
 
@@ -65,7 +65,7 @@ struct MeasurePageItemView: View {
                 // ペットボトル
                 Button {
                     if playerViewModel.hasAvailableBottleMeasurement() {
-                        measureViewModel.openCamera(label: "Bottle")
+                        measureViewModel.openCamera(label: "Bottle", amount: self.amount)
                     }
                     else
                     {
@@ -75,13 +75,14 @@ struct MeasurePageItemView: View {
                     Text("計測")
                 }
                 .buttonStyle(.plain)
+                .measureButtonBorder()
             }
             else
             {
                 // プラごみ
                 Button {
                     if playerViewModel.canMeasurePlasticTodayValue {
-                        measureViewModel.openCamera(label: "Plastic")
+                        measureViewModel.openCamera(label: "Plastic", amount: self.amount)
                     }
                     else
                     {
@@ -91,9 +92,25 @@ struct MeasurePageItemView: View {
                     Text("計測")
                 }
                 .buttonStyle(.plain)
+                .measureButtonBorder()
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding(24)
+    }
+}
+
+// ボタンの装飾
+private extension View {
+    func measureButtonBorder() -> some View {
+        self
+            .font(.headline)
+            .foregroundStyle(.primary)
+            .padding(.vertical, 12)
+            .padding(.horizontal, 32)
+            .overlay {
+                RoundedRectangle(cornerRadius: 8)
+                    .stroke(.primary, lineWidth: 2)
+            }
     }
 }

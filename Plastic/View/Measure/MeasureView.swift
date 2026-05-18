@@ -4,6 +4,8 @@ import SwiftUI
 struct MeasureView: View {
     @EnvironmentObject private var playerViewModel: PlayerViewModel
     @EnvironmentObject private var toastViewModel: ToastViewModel
+    @EnvironmentObject private var fishViewModel: FishViewModel
+    @EnvironmentObject private var bannerViewModel: BannerViewModel
     @ObservedObject private var measureViewModel = MeasureViewModel()
 
     var body: some View {
@@ -71,6 +73,15 @@ struct MeasureView: View {
                     }
                 }
             }
+        }
+        .onAppear {
+            // MeasureViewModelにPlayerViewModelの参照を渡す
+            measureViewModel.setPlayerViewModel(playerViewModel)
+            playerViewModel.setToastViewModel(toastViewModel)
+
+            // MeasureViewModelにFishViewModelの参照を渡す
+            measureViewModel.setFishViewModel(fishViewModel)
+            fishViewModel.setBannerViewModel(bannerViewModel)
         }
     }
 }

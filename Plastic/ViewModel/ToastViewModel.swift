@@ -14,5 +14,8 @@ final class ToastViewModel : ObservableObject {
     func toastPreview(message : String) {
         self.showToast = true
         self.toastMessage = message
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.showToast = false
+        }
     }
 }
