@@ -117,6 +117,6 @@ final class GameScene: SKScene {
             return 1.0
         }
 
-        return CGFloat(fishData.size) / 100
+        return CGFloat(fishData.portraitSize) / 100
     }
 }

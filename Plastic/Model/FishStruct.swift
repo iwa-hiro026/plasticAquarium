@@ -8,7 +8,7 @@ struct FishStruct: Identifiable {
     let image: Image // 立ち絵画像
     let image2: Image // ボックス用画像
     let size: Int // サイズ
-    let portraitSize: CGSize // 立ち絵サイズ
+    let portraitSize: Int // 立ち絵サイズ
     let classification: String // 分類
     let label: String // 計測ラベル
 
@@ -19,7 +19,7 @@ struct FishStruct: Identifiable {
         image: Image,
         image2: Image,
         size: Int,
-        portraitSize: CGSize,
+        portraitSize: Int,
         classification: String,
         label: String
     ) {
@@ -40,20 +40,20 @@ struct allFish {
         FishStruct(
             id: "salmon",
             name: "Salmon",
-            image: Image("salmon"),
-            image2: Image("salmon"),
+            image: Image("fish_default"),
+            image2: Image("fish_default2"),
             size: 5000,
-            portraitSize: CGSize(width: 120, height: 80),
+            portraitSize: 700,
             classification: "River",
             label: "Plastic"
         ),
         FishStruct(
             id: "buri",
             name: "Buri",
-            image: Image("buri"),
-            image2: Image("buri"),
+            image: Image("fish_default"),
+            image2: Image("fish_default2"),
             size: 10000,
-            portraitSize: CGSize(width: 160, height: 90),
+            portraitSize: 600,
             classification: "Sea",
             label: "Plastic"
         ),
@@ -61,29 +61,29 @@ struct allFish {
             id: "katuo",
             name: "Katuo",
             image: Image("katuo"),
-            image2: Image("katuo"),
+            image2: Image("katuo2"),
             size: 3000,
-            portraitSize: CGSize(width: 160, height: 90),
+            portraitSize: 400,
             classification: "Sea",
             label: "Plastic"
         ),
         FishStruct(
             id: "saba",
             name: "Saba",
-            image: Image("saba"),
-            image2: Image("saba"),
+            image: Image("fish_default"),
+            image2: Image("fish_default2"),
             size: 200,
-            portraitSize: CGSize(width: 160, height: 90),
+            portraitSize: 200,
             classification: "Sea",
             label: "Bottle"
         ),
         FishStruct(
             id: "aji",
             name: "Aji",
-            image: Image("aji"),
-            image2: Image("aji"),
+            image: Image("fish_default"),
+            image2: Image("fish_default2"),
             size: 150,
-            portraitSize: CGSize(width: 160, height: 90),
+            portraitSize: 150,
             classification: "Sea",
             label: "Bottle"
         )

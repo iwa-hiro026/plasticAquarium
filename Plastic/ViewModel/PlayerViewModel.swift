@@ -5,7 +5,7 @@ import Foundation
 // プレイヤー表示用ViewModel。画面に表示する値をまとめて持つ
 final class PlayerViewModel: ObservableObject {
     let playerModel: PlayerModel
-    @EnvironmentObject var toastViewModel: ToastViewModel
+    private var toastViewModel: ToastViewModel?
 
     @Published var totalMeasurementCountText: String
     @Published var plasticMeasurementCountText: String
@@ -45,6 +45,10 @@ final class PlayerViewModel: ObservableObject {
         self.gameStartedAtText = ""
         refreshDisplayProperties()
     }
+    
+    func setToastViewModel(_ toastViewModel: ToastViewModel) {
+        self.toastViewModel = toastViewModel
+    }
 
     // プレイヤーモデルから表示値を更新する
     func refreshDisplayProperties() {
@@ -71,9 +75,9 @@ final class PlayerViewModel: ObservableObject {
     func measureBottle(amount: Int) {
         if self.playerModel.measureBottle(amount: amount) {
             refreshDisplayProperties()
-            toastViewModel.toastPreview(message: "計測しました")
+            toastViewModel?.toastPreview(message: "計測しました")
         } else {
-            toastViewModel.toastPreview(message: "計測に失敗しました")
+            toastViewModel?.toastPreview(message: "計測に失敗しました")
         }
     }
 
@@ -81,9 +85,9 @@ final class PlayerViewModel: ObservableObject {
     func measurePlastic(amount: Int) {
         if self.playerModel.measurePlastic(amount: amount) {
             refreshDisplayProperties()
-            toastViewModel.toastPreview(message: "計測しました")
+            toastViewModel?.toastPreview(message: "計測しました")
         } else {
-            toastViewModel.toastPreview(message: "計測に失敗しました")
+            toastViewModel?.toastPreview(message: "計測に失敗しました")
         }
     }
 

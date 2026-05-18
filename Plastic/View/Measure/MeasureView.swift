@@ -77,6 +77,7 @@ struct MeasureView: View {
         .onAppear {
             // MeasureViewModelにPlayerViewModelの参照を渡す
             measureViewModel.setPlayerViewModel(playerViewModel)
+            playerViewModel.setToastViewModel(toastViewModel)
 
             // MeasureViewModelにFishViewModelの参照を渡す
             measureViewModel.setFishViewModel(fishViewModel)
