@@ -32,6 +32,7 @@
 		55403E4E2FBAF3DA0002EE6F /* ExibitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55403E4A2FBAF3DA0002EE6F /* ExibitionView.swift */; };
 		55F200012FB3000000000000 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F200032FB3000000000000 /* BannerView.swift */; };
 		55F200022FB3000000000000 /* BannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F200042FB3000000000000 /* BannerViewModel.swift */; };
+		55F300012FB4000000000000 /* BoxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F300022FB4000000000000 /* BoxViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		55F100052FB2000000000000 /* FishNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FishNode.swift; sourceTree = "<group>"; };
 		55F200032FB3000000000000 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		55F200042FB3000000000000 /* BannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewModel.swift; sourceTree = "<group>"; };
+		55F300022FB4000000000000 /* BoxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -183,6 +185,7 @@
 				552EC2AD2FB1C5AE008888E0 /* MeasureViewModel.swift */,
 				552EC2AE2FB1C5AE008888E0 /* PlayerViewModel.swift */,
 				55F200042FB3000000000000 /* BannerViewModel.swift */,
+				55F300022FB4000000000000 /* BoxViewModel.swift */,
 				552EC2AF2FB1C5AE008888E0 /* ToastViewModel.swift */,
 			);
 			path = ViewModel;
@@ -398,6 +401,7 @@
 				552EC2C42FB1C5AE008888E0 /* PlayerViewModel.swift in Sources */,
 				55F200012FB3000000000000 /* BannerView.swift in Sources */,
 				55F200022FB3000000000000 /* BannerViewModel.swift in Sources */,
+				55F300012FB4000000000000 /* BoxViewModel.swift in Sources */,
 				552EC2C52FB1C5AE008888E0 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
